@@ -1,0 +1,10 @@
+Hosted API Call Output
+
+Prompt:
+Explain AI engineering in one sentence.
+
+Model:
+gpt-4o-mini
+
+Output:
+AI engineering is the discipline of designing, building, and deploying artificial intelligence systems and solutions, combining principles from software engineering, data science, and machine learning.
