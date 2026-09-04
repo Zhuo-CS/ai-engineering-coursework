@@ -4,8 +4,8 @@ This repository contains the assignments completed for the AI Engineering course
 
 ## Project Structure
 - `api_call.py`: Python script to interact with a hosted LLM provider Openai via API.
-- `output_api.txt` (or screenshot): Evidence of the successful hosted API call output.
-- `output_ollama.txt` (or screenshot): Evidence of the local Ollama model execution.
+- `api_output.txt` (or screenshot): Evidence of the successful hosted API call output.
+- `ollama_chat_log.txt` (or screenshot): Evidence of the local Ollama model execution.
 - `README.md`: Project overview and setup instructions.
 
 ---
