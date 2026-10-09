@@ -78,7 +78,7 @@ Write **5 test questions** and run each through the pipeline. Your set must incl
 | 5 | Does this dataset track registration metrics for commercial aircraft flights? | Unanswerable | N/A | correctly declined |
 
 **Pick one question where the result wasn't fully correct (or, if everything worked, the one that came closest to failing). Was the weak point retrieval or generation? How can you tell from the notebook's output?**
-The weak point for Question 4 ("How should the pipeline clean up trailing spaces or lowercase county variants?") was **retrieval**. Looking at the notebook's output cells, the `Chroma` database failed to fetch the data dictionary passage containing string-cleaning rules, pulling instead an unrelated passage explaining API rate limits. Because the retrieval layer surface-matched peripheral terms and passed the wrong context chunk to `gemini-2.5-flash`, the generation model had no accurate reference data and produced an incorrect answer.
+The weak point for Question 4 ("How should the pipeline clean up trailing spaces or lowercase county variants?") was **retrieval**. Looking at the notebook's output cells, the `Chroma` database failed to fetch the data dictionary passage containing string-cleaning rules, pulling instead an unrelated passage explaining API rate limits. Because the retrieval layer surface-matched peripheral terms and passed the wrong context chunk to `gemini-3.8-flash`, the generation model had no accurate reference data and produced an incorrect answer.
 
 ---
 
