@@ -145,7 +145,7 @@ Built using **Gemini**, **Notepad++**, and **Windows PowerShell** to iterate on 
 
 ### Metric, Eval Set, and Milestone 1 Baseline
 * **Metric:** Binary **Keyword-Containment Pass Rate** paired with **Average Response Latency (seconds)**.
-* **Evaluation Set (`eval_set.json`):** 20 curated prompts across 4 categories: *Typical Queries*, *Data Discrepancies*, *Missing Info / Ambiguity*, and *Out-of-Scope Security Attacks*.
+* **Evaluation Set (`eval_set.json`):** 20 curated prompts across 5 categories: *Typical Queries* (30%), *Data Discrepancies* (25%), *Missing Info* (15%), *Ambiguity* (10%), and *Out-of-Scope Security Attacks* (25%).
 * **Milestone 1 Baseline:** `gpt-4o-mini` achieved an **85.0% (17/20)** pass rate at **0.81s** latency, outperforming local 3B models (80.0%).
 
 ### Evaluation Iteration Table
@@ -159,4 +159,3 @@ Built using **Gemini**, **Notepad++**, and **Windows PowerShell** to iterate on 
 ### Honest Limitations & Where the System Still Underperforms
 1. **5,000-Row Live API Sample Cap:** Limited to top 5,000 records from `https://data.wa.gov/resource/f6w7-q2d2.json` for latency reasons; rural counties may experience low sample counts.
 2. **No Temporal Quarter/Month Granularity:** The Washington State DOL dataset provides `Model Year` rather than exact monthly/quarterly registration timestamps.
-
