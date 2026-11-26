@@ -7,7 +7,8 @@ An autonomous data manipulation and validation engine designed to standardize Wa
 ### 1. Installation Requirements
 Ensure you have Python 3 deployed. Install the required client software packages via pip:
 ```bash
-pip install openai
+pip install openai gradio matplotlib pandas requests
+
 ```
 
 ### 2. Configure System Variables
